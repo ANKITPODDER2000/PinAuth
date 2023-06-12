@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp"
+    android:paddingVertical="32dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/lock_screen_image"
+        android:src="@drawable/lock_img" />
+
+    <TextView
+        android:id="@+id/tvLockStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        android:lineHeight="24dp"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        tools:text="Please set a Pin or Pattern" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnOpenPinSetting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_weight="1"
+            android:text="@string/pin_setting"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnOpenBiometricSetting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_weight="1"
+            android:text="@string/biometric_setting"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnBiometricStrong"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_weight="1"
+            android:text="@string/biometric_strong" />
+
+        <Button
+            android:id="@+id/btnDeviceCredential"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_weight="1"
+            android:text="@string/device_credential" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PinAuth</string>
+    <string name="lock_screen_image">lock_screen_image</string>
+    <string name="biometric_strong">Bio Prompt</string>
+    <string name="device_credential">Pin Prompt</string>
+    <string name="pin_setting">Pin Settings</string>
+    <string name="biometric_setting">Bio Settings</string>
+</resources>
